@@ -3,7 +3,8 @@ import RegisterUserComponent from '../Components/RegisterUser/RegisterUserCompon
 function RegisterUserPage() {
     return (
         <div>
-            <RegisterUserComponent />
+            {/* <RegisterUserComponent /> */}
+            <h1>Nani?????</h1>
         </div>
     )
 }
