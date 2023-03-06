@@ -2,6 +2,7 @@
   "name": "user-registration",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://EsGui.github.io/cadastro-de-usuarios-front-end/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publicar": "npm run build && ./node_modules/.bin/gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
