@@ -1,7 +1,9 @@
+import RegisterUserComponent from "../Components/RegisterUser/RegisterUserComponent";
+
 function RegisterUserPage() {
     return (
         <div>
-            <RegisterUserPage />
+            <RegisterUserComponent />
         </div>
     )
 }
