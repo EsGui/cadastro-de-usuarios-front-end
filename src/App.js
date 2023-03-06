@@ -3,7 +3,8 @@ import RegisterUserPage from "./Pages/RegisterUserPage";
 function App() {
   return (
     <div>
-      <RegisterUserPage />
+      {/* <RegisterUserPage /> */}
+      <h1>testando</h1>
     </div>
   );
 }

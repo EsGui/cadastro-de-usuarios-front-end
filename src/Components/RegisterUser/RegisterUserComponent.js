@@ -8,4 +8,4 @@ function RegisterUserComponent() {
     )
 }
 
-export default RegisterUserComponent
+export default RegisterUserComponent;
