@@ -25,7 +25,7 @@ function RegisterUserComponent() {
         <div className="DivSonRegisterUserComponent1">
           <p>As contas criadas apareção aqui</p>
             {
-              listUsers.map(({
+              listUsers && listUsers.map(({
                 email,
                 password,
               }) => (
