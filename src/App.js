@@ -1,4 +1,5 @@
 import RegisterUserPage from "./Pages/RegisterUserPage";
+import './App.css'
 
 function App() {
   return (
