@@ -40,9 +40,7 @@ function Logic ({ children }) {
             setMessageError("")
         }
     }, [messageError])
-
-    console.log(messageError);
-
+    
     const functionDeleteUser = async ({ target: { name } }) => {
         const email = name;
         await requestUsers.deleteUsers({
