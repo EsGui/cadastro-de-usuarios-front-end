@@ -1,0 +1,52 @@
+.DivFatherRegisterUserComponent {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    padding: 50px;
+}
+
+.DivFatherRegisterUserComponent div {
+    margin: 5px;
+}
+
+.DivSonRegisterUserComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+}
+
+.DivSonRegisterUserComponent1 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 800px;
+    width: 50%;
+    background-color: rgb(225, 225, 225, 0.9);
+}
+
+.DivSonRegisterUserComponent {
+    background-color: rgb(225, 225, 225, 0.9);
+}
+
+.DivSonRegisterUserComponent input {
+    width: 50%;
+    height: 5%;
+    margin-bottom: 10px;
+}
+
+.DivSpecificAccount {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid black;
+    width: 80%;
+
+}
