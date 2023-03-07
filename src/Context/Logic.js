@@ -36,6 +36,7 @@ function Logic ({ children }) {
     useEffect(() => {
         if (messageError.length > 0) {
             window.alert(messageError)
+            setMessageError("")
         }
     }, [messageError])
 
