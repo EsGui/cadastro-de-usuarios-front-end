@@ -31,6 +31,7 @@ function Logic ({ children }) {
         if (response && response.arrayLength) setMessageError(response.arrayLength);
         if (response && response.confirmPassword) setMessageError(response.confirmPassword);
         if (response && response.inputEmpty) setMessageError(response.inputEmpty);
+        document.location.reload();
     }
 
     useEffect(() => {
