@@ -7,6 +7,7 @@ function Logic ({ children }) {
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
     const [listUsers, setListUsers] = useState([]);
+    const [messageError, setMessageError] = useState("")
 
     useEffect(() => {
         const request = async () => {
@@ -21,13 +22,24 @@ function Logic ({ children }) {
     const functionRegisterUsersPassword = ({ target: { value } }) => setPassword(value);
     const functionRegisterUsersConfirmPassword = ({ target: { value } }) => setConfirmPassword(value);
     const functionButtonUsers = async () => {
-        await requestUsers.registerUsers({
+        const response = await requestUsers.registerUsers({
             email,
             password,
             confirmPassword
         })
-        document.location.reload()        
+        if (response && response.emailRepetion) setMessageError(response.emailRepetion);
+        if (response && response.arrayLength) setMessageError(response.arrayLength);
+        if (response && response.confirmPassword) setMessageError(response.confirmPassword);
+        if (response && response.inputEmpty) setMessageError(response.inputEmpty);
     }
+
+    useEffect(() => {
+        if (messageError.length > 0) {
+            window.alert(messageError)
+        }
+    }, [messageError])
+
+    console.log(messageError);
 
     const functionDeleteUser = async ({ target: { name } }) => {
         const email = name;
