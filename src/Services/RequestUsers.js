@@ -4,7 +4,7 @@ const requestUsers = {
         password,
         confirmPassword,
     }) => {
-        const url = "https://cadastro-de-usuarios-back-hx3xrx9te-esgui.vercel.app/registration"
+        const url = "https://cadastro-de-usuarios-back-6jd352t0k-esgui.vercel.app/registration"
         const request = await fetch(url, {
             method: "POST",
             headers: {
@@ -21,7 +21,7 @@ const requestUsers = {
     },
 
     deleteUsers: async ({ email }) => {
-        const url = "https://cadastro-de-usuarios-back-hx3xrx9te-esgui.vercel.app/delete-users"
+        const url = "https://cadastro-de-usuarios-back-6jd352t0k-esgui.vercel.app/delete-users"
         const request = await fetch(url, {
             method: "POST",
             headers: {
@@ -36,7 +36,7 @@ const requestUsers = {
     },
 
     getUsers: async () => {
-        const url = "https://cadastro-de-usuarios-back-hx3xrx9te-esgui.vercel.app/users";
+        const url = "https://cadastro-de-usuarios-back-6jd352t0k-esgui.vercel.app/users";
         const request = await fetch(url);
         const response = await request.json();
         return response;
